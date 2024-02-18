@@ -51,12 +51,12 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Suite" class="navigator-link ">
-                    <span>C:\Users\HP\git\repository\SeleniumFramwork\afterlogin.xml</span>
+                    <span>C:\Users\HP\git\repository\SeleniumFramwork\testng.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
                   <a href="#" panel-name="testlist-Suite" class="navigator-link ">
-                    <span class="test-stats">1 test</span>
+                    <span class="test-stats">3 tests</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -93,7 +93,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method,   1 passed</span>
+                    <span class="method-stats">3 methods,   3 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -104,7 +104,17 @@
                     <div class="method-list-content passed suite-Suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="qaTest.AfterLoginTest" class="method navigator-link" hash-for-method="loginintoHomePage">loginintoHomePage</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="qaTest.NewTest" class="method navigator-link" hash-for-method="SampleMethodForEntringCredential">SampleMethodForEntringCredential</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="qaTest.NewTest" class="method navigator-link" hash-for-method="SampleMethodForEntringCredential">SampleMethodForEntringCredential</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="qaTest.NewTest" class="method navigator-link" hash-for-method="SampleMethodForEntringCredential">SampleMethodForEntringCredential</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Suite -->
@@ -122,14 +132,28 @@
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">qaTest.AfterLoginTest</span>
+              <span class="class-name">qaTest.NewTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="loginintoHomePage">
-                  </a> <!-- loginintoHomePage -->
-                  <span class="method-name">loginintoHomePage</span>
+                  <a name="SampleMethodForEntringCredential">
+                  </a> <!-- SampleMethodForEntringCredential -->
+                  <span class="method-name">SampleMethodForEntringCredential</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="SampleMethodForEntringCredential">
+                  </a> <!-- SampleMethodForEntringCredential -->
+                  <span class="method-name">SampleMethodForEntringCredential</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="SampleMethodForEntringCredential">
+                  </a> <!-- SampleMethodForEntringCredential -->
+                  <span class="method-name">SampleMethodForEntringCredential</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -137,7 +161,7 @@
         </div> <!-- panel Suite -->
         <div panel-name="test-xml-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\HP\git\repository\SeleniumFramwork\afterlogin.xml</span>
+            <span class="header-content">C:\Users\HP\git\repository\SeleniumFramwork\testng.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -147,13 +171,27 @@
   &lt;listeners&gt;
     &lt;listener class-name=&quot;utils.SuiteListener&quot;/&gt;
   &lt;/listeners&gt;
-  &lt;test thread-count=&quot;5&quot; name=&quot;Test&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;ChromeTest&quot;&gt;
     &lt;parameter name=&quot;browser&quot; value=&quot;chrome&quot;/&gt;
-    &lt;parameter name=&quot;testClass&quot; value=&quot;qaTest.AfterLoginTest&quot;/&gt;
+    &lt;parameter name=&quot;testClass&quot; value=&quot;qaTest.NewTest&quot;/&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;qaTest.AfterLoginTest&quot;/&gt;
+      &lt;class name=&quot;qaTest.NewTest&quot;/&gt;
     &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- Test --&gt;
+  &lt;/test&gt; &lt;!-- ChromeTest --&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;FirefoxTest&quot;&gt;
+    &lt;parameter name=&quot;browser&quot; value=&quot;firefox&quot;/&gt;
+    &lt;parameter name=&quot;testClass&quot; value=&quot;qaTest.NewTest&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;qaTest.NewTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- FirefoxTest --&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;EdgeTest&quot;&gt;
+    &lt;parameter name=&quot;browser&quot; value=&quot;edge&quot;/&gt;
+    &lt;parameter name=&quot;testClass&quot; value=&quot;qaTest.NewTest&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;qaTest.NewTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- EdgeTest --&gt;
 &lt;/suite&gt; &lt;!-- Suite --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -165,7 +203,13 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Test (1 class)</span>
+                <span class="test-name">ChromeTest (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">FirefoxTest (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">EdgeTest (1 class)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -191,16 +235,24 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(1);
+data.addRows(3);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'loginintoHomePage')
-data.setCell(0, 2, 'qaTest.AfterLoginTest')
-data.setCell(0, 3, 11220);
+data.setCell(0, 1, 'SampleMethodForEntringCredential')
+data.setCell(0, 2, 'qaTest.NewTest')
+data.setCell(0, 3, 13195);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'SampleMethodForEntringCredential')
+data.setCell(1, 2, 'qaTest.NewTest')
+data.setCell(1, 3, 10260);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'SampleMethodForEntringCredential')
+data.setCell(2, 2, 'qaTest.NewTest')
+data.setCell(2, 3, 6107);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 11 seconds</span>
+              <span class="suite-total-time">Total running time: 29 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -226,26 +278,66 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">qaTest.AfterLoginTest</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">qaTest.NewTest</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
-                <span class="method-name">beforeTestMethod(chrome, qaTest.AfterLoginTest)</span>
+                <span class="method-name">beforeTestMethod(chrome, qaTest.NewTest)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-test before -->
               <div class="configuration-method before">
-                <span class="method-name">beforeMethod(chrome, public void qaTest.AfterLoginTest.loginintoHomePage())</span>
-                <span class="method-start">232 ms</span>
+                <span class="method-name">beforeMethod(chrome, public void qaTest.NewTest.SampleMethodForEntringCredential())</span>
+                <span class="method-start">241 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">loginintoHomePage</span>
-                <span class="method-start">10688 ms</span>
+                <span class="method-name">SampleMethodForEntringCredential</span>
+                <span class="method-start">11683 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">afterMethod([TestResult name=loginintoHomePage status=SUCCESS method=AfterLoginTest.loginintoHomePage()[pri:0, i...)</span>
-                <span class="method-start">21908 ms</span>
+                <span class="method-name">afterMethod([TestResult name=SampleMethodForEntringCredential status=SUCCESS method=NewTest.SampleMethodForEntri...)</span>
+                <span class="method-start">21945 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-test after">
                 <span class="method-name">afterTest</span>
-                <span class="method-start">22507 ms</span>
+                <span class="method-start">22337 ms</span>
+              </div> <!-- configuration-test after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(firefox, public void qaTest.NewTest.SampleMethodForEntringCredential())</span>
+                <span class="method-start">22667 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-test before">
+                <span class="method-name">beforeTestMethod(firefox, qaTest.NewTest)</span>
+                <span class="method-start">22667 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="test-method">
+                <span class="method-name">SampleMethodForEntringCredential</span>
+                <span class="method-start">34797 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=SampleMethodForEntringCredential status=SUCCESS method=NewTest.SampleMethodForEntri...)</span>
+                <span class="method-start">40904 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-test after">
+                <span class="method-name">afterTest</span>
+                <span class="method-start">41959 ms</span>
+              </div> <!-- configuration-test after -->
+              <div class="configuration-test before">
+                <span class="method-name">beforeTestMethod(edge, qaTest.NewTest)</span>
+                <span class="method-start">42053 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(edge, public void qaTest.NewTest.SampleMethodForEntringCredential())</span>
+                <span class="method-start">42063 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">SampleMethodForEntringCredential</span>
+                <span class="method-start">64695 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=SampleMethodForEntringCredential status=SUCCESS method=NewTest.SampleMethodForEntri...)</span>
+                <span class="method-start">77891 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-test after">
+                <span class="method-name">afterTest</span>
+                <span class="method-start">78201 ms</span>
               </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

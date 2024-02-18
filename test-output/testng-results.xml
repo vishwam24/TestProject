@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-02-18T14:45:05 IST" name="Suite" finished-at="2024-02-18T14:45:28 IST" duration-ms="23024">
+  <suite started-at="2024-02-18T19:15:19 IST" name="Suite" finished-at="2024-02-18T19:16:37 IST" duration-ms="78266">
     <groups>
     </groups>
-    <test started-at="2024-02-18T14:45:05 IST" name="Test" finished-at="2024-02-18T14:45:28 IST" duration-ms="23024">
-      <class name="qaTest.AfterLoginTest">
-        <test-method is-config="true" signature="beforeTestMethod(java.lang.String,java.lang.String)[pri:0, instance:qaTest.AfterLoginTest@7e07db1f]" started-at="2024-02-18T14:45:05 IST" name="beforeTestMethod" finished-at="2024-02-18T14:45:05 IST" duration-ms="216" status="PASS">
+    <test started-at="2024-02-18T19:15:19 IST" name="ChromeTest" finished-at="2024-02-18T19:15:41 IST" duration-ms="22647">
+      <class name="qaTest.NewTest">
+        <test-method is-config="true" signature="beforeTestMethod(java.lang.String,java.lang.String)[pri:0, instance:qaTest.NewTest@16d04d3d]" started-at="2024-02-18T19:15:19 IST" name="beforeTestMethod" finished-at="2024-02-18T19:15:19 IST" duration-ms="224" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -16,14 +16,14 @@
             </param>
             <param index="1">
               <value>
-                <![CDATA[qaTest.AfterLoginTest]]>
+                <![CDATA[qaTest.NewTest]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTestMethod -->
-        <test-method is-config="true" signature="beforeMethod(java.lang.String,java.lang.reflect.Method)[pri:0, instance:qaTest.AfterLoginTest@7e07db1f]" started-at="2024-02-18T14:45:05 IST" name="beforeMethod" finished-at="2024-02-18T14:45:15 IST" duration-ms="10456" status="PASS">
+        <test-method is-config="true" signature="beforeMethod(java.lang.String,java.lang.reflect.Method)[pri:0, instance:qaTest.NewTest@16d04d3d]" started-at="2024-02-18T19:15:19 IST" name="beforeMethod" finished-at="2024-02-18T19:15:30 IST" duration-ms="11442" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -32,33 +32,143 @@
             </param>
             <param index="1">
               <value>
-                <![CDATA[public void qaTest.AfterLoginTest.loginintoHomePage()]]>
+                <![CDATA[public void qaTest.NewTest.SampleMethodForEntringCredential()]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="loginintoHomePage()[pri:0, instance:qaTest.AfterLoginTest@7e07db1f]" started-at="2024-02-18T14:45:15 IST" name="loginintoHomePage" finished-at="2024-02-18T14:45:27 IST" duration-ms="11220" status="PASS">
+        <test-method signature="SampleMethodForEntringCredential()[pri:0, instance:qaTest.NewTest@16d04d3d]" started-at="2024-02-18T19:15:30 IST" name="SampleMethodForEntringCredential" finished-at="2024-02-18T19:15:40 IST" duration-ms="10260" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- loginintoHomePage -->
-        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:qaTest.AfterLoginTest@7e07db1f]" started-at="2024-02-18T14:45:27 IST" name="afterMethod" finished-at="2024-02-18T14:45:27 IST" duration-ms="597" status="PASS">
+        </test-method> <!-- SampleMethodForEntringCredential -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:qaTest.NewTest@16d04d3d]" started-at="2024-02-18T19:15:40 IST" name="afterMethod" finished-at="2024-02-18T19:15:41 IST" duration-ms="392" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=loginintoHomePage status=SUCCESS method=AfterLoginTest.loginintoHomePage()[pri:0, instance:qaTest.AfterLoginTest@7e07db1f] output={null}]]]>
+                <![CDATA[[TestResult name=SampleMethodForEntringCredential status=SUCCESS method=NewTest.SampleMethodForEntringCredential()[pri:0, instance:qaTest.NewTest@16d04d3d] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="afterTest()[pri:0, instance:qaTest.AfterLoginTest@7e07db1f]" started-at="2024-02-18T14:45:27 IST" name="afterTest" finished-at="2024-02-18T14:45:28 IST" duration-ms="510" status="PASS">
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:qaTest.NewTest@16d04d3d]" started-at="2024-02-18T19:15:41 IST" name="afterTest" finished-at="2024-02-18T19:15:41 IST" duration-ms="304" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->
-      </class> <!-- qaTest.AfterLoginTest -->
-    </test> <!-- Test -->
+      </class> <!-- qaTest.NewTest -->
+    </test> <!-- ChromeTest -->
+    <test started-at="2024-02-18T19:15:41 IST" name="FirefoxTest" finished-at="2024-02-18T19:16:01 IST" duration-ms="19391">
+      <class name="qaTest.NewTest">
+        <test-method is-config="true" signature="beforeMethod(java.lang.String,java.lang.reflect.Method)[pri:0, instance:qaTest.NewTest@368f2016]" started-at="2024-02-18T19:15:41 IST" name="beforeMethod" finished-at="2024-02-18T19:15:53 IST" duration-ms="12130" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[public void qaTest.NewTest.SampleMethodForEntringCredential()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method is-config="true" signature="beforeTestMethod(java.lang.String,java.lang.String)[pri:0, instance:qaTest.NewTest@368f2016]" started-at="2024-02-18T19:15:41 IST" name="beforeTestMethod" finished-at="2024-02-18T19:15:41 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[qaTest.NewTest]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTestMethod -->
+        <test-method signature="SampleMethodForEntringCredential()[pri:0, instance:qaTest.NewTest@368f2016]" started-at="2024-02-18T19:15:53 IST" name="SampleMethodForEntringCredential" finished-at="2024-02-18T19:15:59 IST" duration-ms="6107" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SampleMethodForEntringCredential -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:qaTest.NewTest@368f2016]" started-at="2024-02-18T19:15:59 IST" name="afterMethod" finished-at="2024-02-18T19:16:00 IST" duration-ms="1055" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=SampleMethodForEntringCredential status=SUCCESS method=NewTest.SampleMethodForEntringCredential()[pri:0, instance:qaTest.NewTest@368f2016] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:qaTest.NewTest@368f2016]" started-at="2024-02-18T19:16:00 IST" name="afterTest" finished-at="2024-02-18T19:16:01 IST" duration-ms="88" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+      </class> <!-- qaTest.NewTest -->
+    </test> <!-- FirefoxTest -->
+    <test started-at="2024-02-18T19:16:01 IST" name="EdgeTest" finished-at="2024-02-18T19:16:37 IST" duration-ms="36207">
+      <class name="qaTest.NewTest">
+        <test-method is-config="true" signature="beforeTestMethod(java.lang.String,java.lang.String)[pri:0, instance:qaTest.NewTest@a1153bc]" started-at="2024-02-18T19:16:01 IST" name="beforeTestMethod" finished-at="2024-02-18T19:16:01 IST" duration-ms="10" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[edge]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[qaTest.NewTest]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTestMethod -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.String,java.lang.reflect.Method)[pri:0, instance:qaTest.NewTest@a1153bc]" started-at="2024-02-18T19:16:01 IST" name="beforeMethod" finished-at="2024-02-18T19:16:23 IST" duration-ms="22632" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[edge]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[public void qaTest.NewTest.SampleMethodForEntringCredential()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="SampleMethodForEntringCredential()[pri:0, instance:qaTest.NewTest@a1153bc]" started-at="2024-02-18T19:16:23 IST" name="SampleMethodForEntringCredential" finished-at="2024-02-18T19:16:36 IST" duration-ms="13195" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SampleMethodForEntringCredential -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:qaTest.NewTest@a1153bc]" started-at="2024-02-18T19:16:36 IST" name="afterMethod" finished-at="2024-02-18T19:16:37 IST" duration-ms="310" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=SampleMethodForEntringCredential status=SUCCESS method=NewTest.SampleMethodForEntringCredential()[pri:0, instance:qaTest.NewTest@a1153bc] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:qaTest.NewTest@a1153bc]" started-at="2024-02-18T19:16:37 IST" name="afterTest" finished-at="2024-02-18T19:16:37 IST" duration-ms="59" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+      </class> <!-- qaTest.NewTest -->
+    </test> <!-- EdgeTest -->
   </suite> <!-- Suite -->
 </testng-results>
