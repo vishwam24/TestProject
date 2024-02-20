@@ -9,17 +9,44 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">Suite</th></tr>
-<tr><td><a href="#t0">ChromeTest</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">22,647</td><td></td><td></td></tr>
-<tr class="stripe"><td><a href="#t1">FirefoxTest</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">19,391</td><td></td><td></td></tr>
-<tr><td><a href="#t2">EdgeTest</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">36,207</td><td></td><td></td></tr>
-<tr><th>Total</th><th class="num">3</th><th class="num">0</th><th class="num">0</th><th class="num">0</th><th class="num">78,245</th><th colspan="2"></th></tr>
+<tr><td><a href="#t0">ChromeTest</a></td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num attn">1</td><td class="num">27,998</td><td></td><td></td></tr>
+<tr class="stripe"><td><a href="#t1">FirefoxTest</a></td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num attn">1</td><td class="num">29,426</td><td></td><td></td></tr>
+<tr><td><a href="#t2">EdgeTest</a></td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num attn">1</td><td class="num">21,367</td><td></td><td></td></tr>
+<tr><th>Total</th><th class="num">0</th><th class="num">0</th><th class="num attn">3</th><th class="num attn">3</th><th class="num">78,791</th><th colspan="2"></th></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">ChromeTest &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">qaTest.NewTest</td><td><a href="#m0">SampleMethodForEntringCredential</a></td><td rowspan="1">1708263930697</td><td rowspan="1">10260</td></tr></tbody>
-<tbody id="t1"><tr><th colspan="4">FirefoxTest &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">qaTest.NewTest</td><td><a href="#m1">SampleMethodForEntringCredential</a></td><td rowspan="1">1708263953811</td><td rowspan="1">6107</td></tr></tbody>
-<tbody id="t2"><tr><th colspan="4">EdgeTest &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">qaTest.NewTest</td><td><a href="#m2">SampleMethodForEntringCredential</a></td><td rowspan="1">1708263983709</td><td rowspan="1">13195</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">ChromeTest &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">qaTest.NewTest</td><td><a href="#m0">SampleMethodForEntringCredential</a></td><td rowspan="1">1708449070836</td><td rowspan="1">5548</td></tr><tr><th colspan="4">ChromeTest &#8212; retried</th></tr><tr class="retriedeven"><td rowspan="1">qaTest.NewTest</td><td><a href="#m1">SampleMethodForEntringCredential</a></td><td rowspan="1">1708449058935</td><td rowspan="1">5935</td></tr></tbody>
+<tbody id="t1"><tr><th colspan="4">FirefoxTest &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">qaTest.NewTest</td><td><a href="#m2">SampleMethodForEntringCredential</a></td><td rowspan="1">1708449100527</td><td rowspan="1">5070</td></tr><tr><th colspan="4">FirefoxTest &#8212; retried</th></tr><tr class="retriedeven"><td rowspan="1">qaTest.NewTest</td><td><a href="#m3">SampleMethodForEntringCredential</a></td><td rowspan="1">1708449085846</td><td rowspan="1">5747</td></tr></tbody>
+<tbody id="t2"><tr><th colspan="4">EdgeTest &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">qaTest.NewTest</td><td><a href="#m4">SampleMethodForEntringCredential</a></td><td rowspan="1">1708449122904</td><td rowspan="1">4633</td></tr><tr><th colspan="4">EdgeTest &#8212; retried</th></tr><tr class="retriedeven"><td rowspan="1">qaTest.NewTest</td><td><a href="#m5">SampleMethodForEntringCredential</a></td><td rowspan="1">1708449109418</td><td rowspan="1">8025</td></tr></tbody>
 </table>
-<h2>ChromeTest</h2><h3 id="m0">qaTest.NewTest#SampleMethodForEntringCredential</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h2>FirefoxTest</h2><h3 id="m1">qaTest.NewTest#SampleMethodForEntringCredential</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h2>EdgeTest</h2><h3 id="m2">qaTest.NewTest#SampleMethodForEntringCredential</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>ChromeTest</h2><h3 id="m0">qaTest.NewTest#SampleMethodForEntringCredential</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException: Cannot invoke &quot;org.json.simple.JSONObject.get(Object)&quot; because &quot;credentialsJson&quot; is null
+	at pageEvents.LoginPageEvents.enterCredentials(LoginPageEvents.java:38)
+	at qaTest.NewTest.SampleMethodForEntringCredential(NewTest.java:27)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 25 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">qaTest.NewTest#SampleMethodForEntringCredential</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException: Cannot invoke &quot;org.json.simple.JSONObject.get(Object)&quot; because &quot;credentialsJson&quot; is null
+	at pageEvents.LoginPageEvents.enterCredentials(LoginPageEvents.java:38)
+	at qaTest.NewTest.SampleMethodForEntringCredential(NewTest.java:27)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 25 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>FirefoxTest</h2><h3 id="m2">qaTest.NewTest#SampleMethodForEntringCredential</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException: Cannot invoke &quot;org.json.simple.JSONObject.get(Object)&quot; because &quot;credentialsJson&quot; is null
+	at pageEvents.LoginPageEvents.enterCredentials(LoginPageEvents.java:38)
+	at qaTest.NewTest.SampleMethodForEntringCredential(NewTest.java:27)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 25 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">qaTest.NewTest#SampleMethodForEntringCredential</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException: Cannot invoke &quot;org.json.simple.JSONObject.get(Object)&quot; because &quot;credentialsJson&quot; is null
+	at pageEvents.LoginPageEvents.enterCredentials(LoginPageEvents.java:38)
+	at qaTest.NewTest.SampleMethodForEntringCredential(NewTest.java:27)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 25 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>EdgeTest</h2><h3 id="m4">qaTest.NewTest#SampleMethodForEntringCredential</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException: Cannot invoke &quot;org.json.simple.JSONObject.get(Object)&quot; because &quot;credentialsJson&quot; is null
+	at pageEvents.LoginPageEvents.enterCredentials(LoginPageEvents.java:38)
+	at qaTest.NewTest.SampleMethodForEntringCredential(NewTest.java:27)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 25 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">qaTest.NewTest#SampleMethodForEntringCredential</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException: Cannot invoke &quot;org.json.simple.JSONObject.get(Object)&quot; because &quot;credentialsJson&quot; is null
+	at pageEvents.LoginPageEvents.enterCredentials(LoginPageEvents.java:38)
+	at qaTest.NewTest.SampleMethodForEntringCredential(NewTest.java:27)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 25 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

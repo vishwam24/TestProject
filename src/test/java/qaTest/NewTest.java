@@ -18,7 +18,7 @@ public class NewTest extends baseTest {
 			//Test method to perform login functionality
   @Test
   public void SampleMethodForEntringCredential() {
-	  logger.info("Sign in into LoginPage");
+	   logger.info("Sign in into LoginPage");
 
 		homePage.signinButton();
 		logger.info("Verifying  if login text is present or not ");

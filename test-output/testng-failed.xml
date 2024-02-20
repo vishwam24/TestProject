@@ -4,19 +4,49 @@
   <listeners>
     <listener class-name="utils.SuiteListener"/>
   </listeners>
-  <test thread-count="5" name="Test(failed)">
+  <test thread-count="5" name="ChromeTest(failed)">
     <parameter name="browser" value="chrome"/>
-    <parameter name="testClass" value="qaTest.AfterLoginTest"/>
+    <parameter name="testClass" value="qaTest.NewTest"/>
     <classes>
-      <class name="qaTest.AfterLoginTest">
+      <class name="qaTest.NewTest">
         <methods>
           <include name="afterTest"/>
+          <include name="SampleMethodForEntringCredential"/>
           <include name="beforeMethod"/>
           <include name="beforeTestMethod"/>
           <include name="afterMethod"/>
-          <include name="loginintoHomePage"/>
         </methods>
-      </class> <!-- qaTest.AfterLoginTest -->
+      </class> <!-- qaTest.NewTest -->
     </classes>
-  </test> <!-- Test(failed) -->
+  </test> <!-- ChromeTest(failed) -->
+  <test thread-count="5" name="FirefoxTest(failed)">
+    <parameter name="browser" value="firefox"/>
+    <parameter name="testClass" value="qaTest.NewTest"/>
+    <classes>
+      <class name="qaTest.NewTest">
+        <methods>
+          <include name="afterTest"/>
+          <include name="SampleMethodForEntringCredential"/>
+          <include name="beforeMethod"/>
+          <include name="beforeTestMethod"/>
+          <include name="afterMethod"/>
+        </methods>
+      </class> <!-- qaTest.NewTest -->
+    </classes>
+  </test> <!-- FirefoxTest(failed) -->
+  <test thread-count="5" name="EdgeTest(failed)">
+    <parameter name="browser" value="edge"/>
+    <parameter name="testClass" value="qaTest.NewTest"/>
+    <classes>
+      <class name="qaTest.NewTest">
+        <methods>
+          <include name="afterTest"/>
+          <include name="SampleMethodForEntringCredential"/>
+          <include name="beforeMethod"/>
+          <include name="beforeTestMethod"/>
+          <include name="afterMethod"/>
+        </methods>
+      </class> <!-- qaTest.NewTest -->
+    </classes>
+  </test> <!-- EdgeTest(failed) -->
 </suite> <!-- Failed suite [Suite] -->

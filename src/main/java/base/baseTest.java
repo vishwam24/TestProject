@@ -42,7 +42,7 @@ public class baseTest {
 	@Parameters({"browser", "testClass"})
 	public void beforeTestMethod(String browser, String testClass) {
 	    // Get the current date and time
-	    DateTimeFormatter dtf = DateTimeFormatter.ofPattern("yyyy-MM-dd_HH-mm-ss");
+	    DateTimeFormatter dtf = DateTimeFormatter.ofPattern("yyyy-MM-dd_HH_mm_ss");
 	    LocalDateTime now = LocalDateTime.now();
 	    String timeStamp = dtf.format(now);
 
@@ -117,13 +117,13 @@ public class baseTest {
 	// Method to set up the WebDriver based on the specified browser
 	public void setupDriver(String browser) {
 		if (browser.equalsIgnoreCase("chrome")) {
-			WebDriverManager.chromedriver().setup();
+			
 			driver = new ChromeDriver();
 		} else if (browser.equalsIgnoreCase("firefox")) {
-			WebDriverManager.firefoxdriver().setup();
+			
 			driver = new FirefoxDriver();
 		} else if (browser.equalsIgnoreCase("edge")) {
-			WebDriverManager.edgedriver().setup();
+			
 			driver = new EdgeDriver();
 		}
 
